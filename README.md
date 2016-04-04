@@ -1,2 +1,0 @@
-# barbershop
-Обучение в htmlacademy
