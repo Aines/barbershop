@@ -1,8 +1,7 @@
 body {
     font-size: 14px;
     line-height: 24px;
-    font-family: sans-serif, "PT Sans Narrow";
-    
+    font-family: sans-serif, "PT Sans Narrow";    
     color: #fff;    
     background: #111 url("../img/body-bg.jpg") no-repeat center top;
 }
@@ -14,11 +13,14 @@ body {
 }
 
 .main-header {
+    min-height: 70px;
     margin-bottom: 60px;
+    background: #000;
 }
 
 .container {
     width: 940px;
+    min-height: 70px;
     padding: 0 10px;
     margin: 0 auto;    
 }
@@ -53,3 +55,14 @@ body {
     margin-right: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
