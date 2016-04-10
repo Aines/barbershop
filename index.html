@@ -3,12 +3,12 @@
    <head>
        <meta charset="UTF-8">
        <title>Барбершоп "Бородинский"</title>
-       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" href="css/style.css">       
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
    </head>
    <body>
-        
-       <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-      
+            
        <header class="main-header">
           <div class="container clearfix">
               <nav class="main-navigation">
@@ -26,7 +26,7 @@
           </div>           
        </header>
        
-       <main class="container">
+       <main class="container clearfix">
           <div class="index-logo">
            <img src="img/index-logo.png" width="360" height="204" alt="Барбершоп "Бородинский"">
           </div>
@@ -47,7 +47,7 @@
                   <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
               </div>
           </section>
-          <div class="index-content">
+          <div class="index-content clearfix">
               <div class="index-content-left">
                   <h2 class="index-content-title">Новости</h2>
                   <ul class="news-preview">
@@ -60,18 +60,20 @@
                           <time datetime="2016-09-19">19 сентября</time>
                       </li>
                   </ul>
-                  
+                  <button class="btn">Все новости</button>
               </div>
               <div class="index-content-right">
                   <h2 class="index-content-title">Фотогалерея</h2>
-                  <figure class="gallery-content">
+                  <div class="gallery">
+                   <figure class="gallery-content">
                       <img src="img/photo-1.jpg" width="286" height="164" alt="">
-                  </figure>
-                  <button class="btn gallery-prev">Назад</button>
-                  <button class="btn gallery-next">Вперед</button>
+                   </figure>
+                   <button class="btn gallery-prev">Назад</button>
+                   <button class="btn gallery-next">Вперед</button>
+                  </div>
               </div>
           </div>
-          <div class="index-content">
+          <div class="index-content clearfix">
               <div class="index-content-left">
                  <h2 class="index-content-title">Контактная информация</h2>
                  <p>
@@ -91,19 +93,20 @@
               <div class="index-content-right">
                  <h2 class="index-content-title">Записаться</h2>
                   <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-                  <form action="" class="appointment-form" method="post"></form>
+                  <form action="" class="appointment-form" method="post">
                   <input type="text" name="date" value="" placeholder="Дата">
                   <input type="text" name="time" value="" placeholder="Время">
                   <input type="text" name="name" value="" placeholder="Ваше имя">
-                  <input type="tel" name="phone" value="" placeholder="Телефон">
+                  <input type="tel" name="phone" value="" placeholder="Телефон">\
+                  </form>
                   <button class="btn" type="submit">Отправить</button>                  
               </div>
           </div>
            
        </main>
        
-       <footer class="main-footer">
-           <div class="container">
+       <footer class="main-footer ">
+           <div class="container clearfix">
                <section class="footer-contacts">
                    БАРБЕРШОП «БОРОДИНСКИЙ» <br>
                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
@@ -117,12 +120,35 @@
                    <a href="" class="social-btn social-btn-inst">Инстаграм</a>
                </section>
                <section class="footer-copyright">
-                   Разработано: <br>
+                   <p> Разработано:</p> <br>
                    <a href="https://htmlacademy.ru/" class="btn">htmlacademy.ru</a>
                    
                </section>
            </div>
        </footer>
+       <div class="modal-content"><button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+       
+       <h2 class="modal-content-title">Личный кабинет</h2>
+       <p>Введите свой логин и пароль.</p>
+       
+       <form action="https://echo.htmlacademy.ru" class="login-form" method="post">
+           <input type="text" class="icon-user" name="login" placeholder="Логин">
+                  <input type="password" class="icon-password" name="password" placeholder="Пароль">
+                  
+                  <label for="" class="login-checkbox">
+                      <input type="checkbox" name="remember">
+                      <span class="checkbox-indicator"></span>
+                      Запомните меня
+                  </label>
+                  <a href="" class="restore">Я забыл пароль!</a>
+                  <button class="btn" type="submit">Войти</button>
+                   
+               
+           
+       </form>
+       
+       </div>
+       
    </body>
    </html>
    
